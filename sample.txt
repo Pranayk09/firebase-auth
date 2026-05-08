@@ -1,0 +1,12 @@
+icacls VmfileTransferKey.pem /inheritance:r
+Step 3 — Remove every existing user/group
+
+
+icacls VmfileTransferKey.pem /remove "Authenticated Users"
+icacls VmfileTransferKey.pem /remove "BUILTIN\Users"
+icacls VmfileTransferKey.pem /remove "BUILTIN\Administrators"
+icacls VmfileTransferKey.pem /remove "NT AUTHORITY\SYSTEM"
+
+
+Pranayk09
+Pran@93098*#
